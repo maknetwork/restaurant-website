@@ -2,8 +2,10 @@ body {
   margin-top: 0px;
   margin-bottom: 0px;
   margin: 0px;
-
+  text-rendering: optimizeLegibility;
   padding: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 .snow {
   position: absolute;
@@ -177,6 +179,43 @@ p {
 label {
   font-family: "Work Sans", sans-serif;
 }
+.heading-primary-main {
+  animation: moveInLeft 1s ease-in;
+}
+.heading-primary {
+  backface-visibility: hidden;
+}
+.heading-primary-sub {
+  animation: moveInRight 1s ease-in;
+}
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  80% {
+    transform: translateX(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  80% {
+    transform: translateX(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
 input {
   border: none;
   border-radius: 8px;
@@ -185,6 +224,14 @@ input {
   padding-left: 10px;
   font-family: "Work Sans", sans-serif;
   height: 58px;
+}
+textarea {
+  border: none;
+  border-radius: 8px;
+  font-family: "Work Sans", sans-serif;
+
+  display: block;
+  padding: 5px;
 }
 .news-button {
   background-color: #c4e538;
@@ -244,6 +291,9 @@ input:active {
 
   padding: 40px;
 }
+.menu-container {
+  padding: 30px;
+}
 
 @media only screen and (max-width: 768px) {
   /* For50px mobile phones: */
@@ -282,12 +332,49 @@ input:active {
   background-color: #ebebeb;
   border-radius: 8px;
 }
+.rounded {
+  border-radius: 50%;
+  background-image: url(https://themegoods-cdn-pzbycso8wng.stackpathdns.com/grandrestaurantv6/wp-content/uploads/2014/07/asian-food-menu-C3LK68P-150x150.jpg);
+  width: 100px;
+  height: 100px;
+}
+.rounded2 {
+  border-radius: 50%;
+  background-image: url(https://themegoods-cdn-pzbycso8wng.stackpathdns.com/grandrestaurantv6/wp-content/uploads/2020/12/chiles-en-nogada-dish-on-mexican-independence-day-PVRJURW-150x150.jpg);
+  width: 100px;
+  background-position: center;
+  height: 100px;
+}
+.rounded3 {
+  border-radius: 50%;
+  background-image: url(https://themegoods-cdn-pzbycso8wng.stackpathdns.com/grandrestaurantv6/wp-content/uploads/2015/04/wesual-click-SrX3-GldyL0-unsplash-150x150.jpg);
+  width: 100px;
+  background-position: center;
+  height: 100px;
+}
+.rounded4 {
+  border-radius: 50%;
+  background-image: url(https://themegoods-cdn-pzbycso8wng.stackpathdns.com/grandrestaurantv6/wp-content/uploads/2014/07/irina-89UsTc5bjsw-unsplash-150x150.jpg);
+  width: 100px;
+  background-position: center;
+  height: 100px;
+}
 .wrapper {
   margin: 40px;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(10vw, 1fr)); /* 200px */
   grid-gap: 1rem;
   grid-auto-rows: 20vw; /* 240px */
+}
+.menu-table {
+  margin-left: auto;
+  margin-right: auto;
+}
+.blk-colr {
+  color: #1a1a1a;
+}
+.bold-txt {
+  font-weight: 900;
 }
 @media only screen and (max-width: 600px) {
   .wrapper {
@@ -350,4 +437,86 @@ h2,
 h3,
 h4 {
   font-family: "Playfair Display", serif;
+}
+
+/* Contact us 
+
+page style*/
+
+.header {
+  height: 70vh;
+  background-image: url(https://vip-restaurant.vamtam.com/wp-content/uploads/2016/07/section-title-bg-4.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  position: relative;
+  background-size: cover;
+}
+.header2 {
+  height: 70vh;
+  background-image: url(https://themegoods-cdn-pzbycso8wng.stackpathdns.com/grandrestaurantv6/wp-content/uploads/2020/12/assorted-chinese-dishes-42WBYHV-1.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  position: relative;
+  background-size: cover;
+}
+
+.heading {
+  top: 50%;
+  color: #fff;
+  left: 50%;
+  font-size: 32px !important;
+  transform: translate(-50%, -50%);
+  font-weight: 900;
+
+  position: absolute;
+  text-align: center;
+}
+.subheading {
+  color: #cfa670;
+}
+.blur {
+  background: rgba(255, 255, 255, 0.25);
+  background: rgba(255, 255, 255, 0.7);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+}
+.contact-page {
+  display: flex;
+  justify-content: space-between;
+  padding: 50px 80px;
+}
+.contact-info > p {
+  margin-top: 20px;
+}
+
+.form-contact {
+  display: grid;
+  padding: 50px 80px;
+  grid-template-columns: 1fr 1fr 2fr;
+  grid-gap: 2em;
+  position: relative;
+  grid-auto-rows: minmax(60vh, auto);
+}
+
+.img-1 {
+  background-image: url("https://themegoods-cdn-pzbycso8wng.stackpathdns.com/grandrestaurantv6/wp-content/uploads/2020/12/volkan-vardar-1H30uRC1plc-unsplash-768x1159.jpg");
+  border-radius: 20px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.img-2 {
+  background-image: url("https://themegoods-cdn-pzbycso8wng.stackpathdns.com/grandrestaurantv6/wp-content/uploads/2014/02/preparing-vegetarian-burrito-chef-grating-cheese-w-KPKW73T.jpg");
+  border-radius: 20px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.contact-us-form {
+  background-color: #ebebeb;
+  border-radius: 20px;
+
+  height: 90%;
+  padding: 30px;
 }
