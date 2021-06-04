@@ -2,6 +2,7 @@ body {
   margin-top: 0px;
   margin-bottom: 0px;
   margin: 0px;
+  box-sizing: border-box;
   text-rendering: optimizeLegibility;
   padding: 0;
   -webkit-font-smoothing: antialiased;
@@ -234,14 +235,20 @@ textarea {
   padding: 5px;
 }
 .news-button {
-  background-color: #c4e538;
+  background: rgb(247, 150, 192);
+  background: radial-gradient(
+    circle,
+    rgba(247, 150, 192, 1) 0%,
+    rgba(118, 174, 241, 1) 100%
+  );
   border: none;
+
   font-family: "Work Sans", sans-serif;
   border-radius: 8px;
   letter-spacing: 1px;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   font-weight: bold;
-  color: black;
+  color: white;
   text-align: center;
 
   height: 58px;
@@ -519,4 +526,30 @@ page style*/
 
   height: 90%;
   padding: 30px;
+}
+
+.recommended {
+  min-height: 60vh;
+
+  background-image: url(https://themegoods-cdn-pzbycso8wng.stackpathdns.com/grandrestaurantv6/wp-content/uploads/2015/04/wesual-click-SrX3-GldyL0-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.shape-top {
+  overflow: hidden;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  line-height: 0;
+  direction: ltr;
+}
+.shape-btm {
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
 }
