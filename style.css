@@ -553,3 +553,21 @@ page style*/
   bottom: 0px;
   width: 100%;
 }
+
+.leaf {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 100%;
+}
+.leaf-right {
+  position: absolute;
+  transform: translate(0%, -50%);
+  top: 100%;
+  right: 0;
+}
+.leaf-right2 {
+  position: absolute;
+  transform: translate(0%, -50%);
+  top: 0%;
+  right: -1%;
+}
