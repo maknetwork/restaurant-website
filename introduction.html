@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+
+<!--
+  This is a simple example / template impress.js slide show. The goal is to be
+  easier to read for a first timer than the official and very feature rich
+  demo by bartaz (http://bartaz.github.io/impress.js/). It's also a very
+  traditional presentation that looks like slides (square screens with bullet
+  points...), again to make a first timer feel more at home. From this simple
+  presentation you can then go on to more powerful impress.js presentations!
+  
+  This example is hopefully helpful for people that want to create both
+  simple and (eventually) awesome presentations in impress.js and comfortable
+  doing that directly in HTML.
+  
+  By: @henrikingo (Still based on the HTML from bartaz' demo.)  
+    
+-->
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Introduction - Town Food Restaurant</title>
+    <meta name="description" content="Town food Introduction" />
+    <meta name="author" content="Henrik Ingo" />
+    <link href="./css/impress-common.css" rel="stylesheet" />
+    <link href="./css/3D-rotations.css" rel="stylesheet" />
+  </head>
+
+  <body class="impress-not-supported">
+    <div class="fallback-message">
+      <p>
+        Your browser <b>doesn't support the features required</b> by impress.js,
+        so you are presented with a simplified version of this presentation.
+      </p>
+      <p>
+        For the best experience please use the latest <b>Chrome</b>,
+        <b>Safari</b> or <b>Firefox</b> browser.
+      </p>
+    </div>
+
+    <div id="impress" data-transition-duration="2000">
+      <div
+        id="overview"
+        class="step overview"
+        data-x="1350"
+        data-y="100"
+        data-z="100"
+        data-scale="3"
+        data-rotate-y="90"
+      >
+        <h1>Restaurant Project</h1>
+      </div>
+      <div
+        id="overview2"
+        class="step overview"
+        data-x="2018"
+        data-y="106"
+        data-z="3018"
+        data-scale="2"
+      >
+        <p>
+          Good Morning everyone today me and my friends have prepared a website
+          and are going to present it to you. Let me introduce you to the
+          technologies we used
+        </p>
+      </div>
+
+      <div
+        id="step-1"
+        class="step"
+        data-x="0"
+        data-y="0"
+        data-z="0"
+        data-goto-prev="step-8"
+      >
+        <p>HTML5</p>
+        <div style="display: inline-block">
+          <img
+            src="assets/1200px-HTML5_logo_and_wordmark.svg (1).png"
+            width="300px"
+            height="300px"
+          />
+        </div>
+        <div style="display: inline-block; font-size: 20px">
+          HTML5 is a markup language used for structuring and presenting content
+          on the World Wide Web. It is the fifth and last major HTML version
+          that is a World Wide Web Consortium recommendation.
+        </div>
+      </div>
+
+      <div
+        id="step-2"
+        class="step"
+        data-x="420"
+        data-y="-70"
+        data-z="-250"
+        data-rotate-z="45"
+        data-rotate-y="-45"
+        data-rotate-order="zyx"
+      >
+        <p>CSS3</p>
+        <div style="display: inline-block; font-size: 20px">
+          <img
+            src="assets/CSS3_logo_and_wordmark.svg.png"
+            width="200px"
+            height="300px"
+          />
+        </div>
+        <div style="display: inline-block; font-size: 20px">
+          Cascading Style Sheets is a style sheet language used for describing
+          the presentation of a document written in a markup language such as
+          HTML.
+        </div>
+      </div>
+
+      <div
+        id="step-3"
+        class="step"
+        data-x="700"
+        data-y="350"
+        data-z="-350"
+        data-rotate-z="90"
+        data-rotate-y="-90"
+        data-rotate-order="zyx"
+      >
+        <p>Javascript</p>
+        <div style="display: inline-block; font-size: 20px">
+          <img
+            src="assets/980ba07956ccfdf81b5060b1795cdcad.png"
+            width="200px"
+            height="300px"
+          />
+        </div>
+        <div style="display: inline-block; font-size: 20px">
+          JavaScript, often abbreviated as JS, is a programming language that
+          conforms to the ECMAScript specification. JavaScript is high-level,
+          often just-in-time compiled, and multi-paradigm.
+        </div>
+      </div>
+
+      <div
+        id="step-4"
+        class="step"
+        data-x="422"
+        data-y="780"
+        data-z="-250"
+        data-rotate-z="135"
+        data-rotate-y="-135"
+        data-rotate-order="zyx"
+      >
+        <p>Google Fonts</p>
+        <div style="display: inline-block; font-size: 20px">
+          <img
+            src="assets/opengraph_color (1).png"
+            width="500px"
+            height="300px"
+          />
+        </div>
+        <div style="display: inline-block; font-size: 20px">
+          Google Fonts is a library of more than a thousand free and open source
+          font families, an interactive web directory for browsing the library,
+          and APIs for using the fonts via CSS and Android.
+        </div>
+      </div>
+
+      <div
+        id="step-5"
+        class="step"
+        data-x="0"
+        data-y="702"
+        data-z="0"
+        data-rotate-z="180"
+        data-rotate-y="-180"
+        data-rotate-order="zyx"
+      >
+        <p>Libraries used</p>
+        <div style="display: inline-block; font-size: 20px">
+          <ul>
+            <li>
+              <u><b>Normalize css</b> </u> - Normalize.css makes browsers render
+              all elements more consistently and in line with modern standards.
+              It precisely targets only the styles that need normalizing.
+            </li>
+            <li>
+              <u><b>ScrollReveal</b> </u> - ScrollReveal is a JavaScript library
+              for easily animating elements as they enter/leave the viewport. It
+              was designed to be robust and flexible, but hopefully you’ll be
+              surprised below at how easy it is to pick up.
+            </li>
+            <li>
+              <u><b>Font Awesome icons</b> </u> - Font Awesome is a font and
+              icon toolkit based on CSS and Less. As of 2020, Font Awesome was
+              used by 38% of sites that use third-party font scripts, placing
+              Font Awesome in second place after Google Fonts.
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div
+        id="step-6"
+        class="step"
+        data-x="379"
+        data-y="780"
+        data-z="270"
+        data-rotate-z="135"
+        data-rotate-y="-225"
+        data-rotate-order="zyx"
+      >
+        <p>Why this project?</p>
+        <div style="display: inline-block; font-size: 20px">
+          Our group brainstormed for a while and then decided, a restaurant
+          website will be suitable for the project as it is neither too static
+          nor too dynamic. Since it will be our first web development project
+          the idea seemed great as we will be able to use what we learned in the
+          class in this project.
+          <br />
+          Due to COVID-19 restaurants have been greatly affected. Since the
+          restaurants can no longer allow people to dine in, we decided to add
+          an ordering system to our website.
+          <br />
+          Using our delivery system people can order food then our fictional
+          restaurant can deliver the required order to the same individual.
+          Thus, ensuring a contactless, safe and hygienic food delivery.
+        </div>
+      </div>
+
+      <div
+        id="step-7"
+        class="step"
+        data-x="700"
+        data-y="350"
+        data-z="350"
+        data-rotate-z="90"
+        data-rotate-y="-270"
+        data-rotate-order="zyx"
+      >
+        <p>Website layout</p>
+
+        <div style="display: inline-block; font-size: 20px">
+          We decided to build our website in tie with the modern design trends.
+          You will notice that our webiste has sort of a minimalistic feel to it
+          and is also very modern.
+          <br />
+          Every component is made from scratch using css and no css frameworks
+          have been used.
+          <br />
+          Our website has four pages namely-
+
+          <ul>
+            <li>
+              <strong><u>Home</u></strong>
+            </li>
+            <li>
+              <strong><u>Menu</u></strong>
+            </li>
+            <li>
+              <strong><u>Contact Us</u></strong>
+            </li>
+            <li>
+              <strong><u>Order</u></strong>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div
+        id="step-8"
+        class="step"
+        data-x="379"
+        data-y="-70"
+        data-z="270"
+        data-rotate-z="45"
+        data-rotate-y="-315"
+        data-rotate-order="zyx"
+        data-goto-next="step-1"
+      >
+        <div class="text">
+          <p>Thank you</p>
+        </div>
+      </div>
+    </div>
+
+    <div id="impress-toolbar"></div>
+    <div id="impress-help"></div>
+
+    <script type="text/javascript" src="./js/impress.js"></script>
+    <script>
+      impress().init();
+    </script>
+  </body>
+</html>
